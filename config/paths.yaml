@@ -1,5 +1,6 @@
 # The name of the statics folder (uses for images/videos etc.)
 staticPath: 'static/'
+staticPublicPath: 'static/public-root/'
 
 # The build's public path, this will be used to load the Webpack bundle
 publicPath: '/'

@@ -4,7 +4,7 @@
 
 export const EnvironmentNames = {
 	PRODUCTION: 'production',
-	LOCAL: 'local'
+	LOCAL: 'dev'
 };
 
 export const URLNames = {

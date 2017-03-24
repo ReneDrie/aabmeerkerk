@@ -1,17 +1,11 @@
-import SiteHeader from 'component/site-header/site-header';
-import SiteFooter from 'component/site-footer/site-footer';
-import MainNavigation from 'component/main-navigation/main-navigation';
-import store from 'src/app/store';
-import router from 'src/app/router';
-import template from './index.html';
+import Vue from 'vue';
+import App from './app.vue';
 
-export default {
-	template,
-	store,
-	router,
-	components: {
-		SiteHeader,
-		SiteFooter,
-		MainNavigation
-	},
-}
+// exported as self-rendered extended component so:
+// - it can be instantiated in bootstrap where new options can be passed
+// - the setup is compatible with `vuex-connect` which also exports a Vue.extend component
+export default Vue.extend({
+	render(h) {
+		return h(App)
+	}
+});

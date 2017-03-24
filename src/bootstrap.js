@@ -23,7 +23,10 @@ let app = null;
 
 startup()
 	.then(() => {
-		app = new Vue(App);
+		app = new App({
+			store,
+			router
+		});
 
 		// Sync store and router
 		sync(store, router);

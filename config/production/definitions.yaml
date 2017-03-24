@@ -1,5 +1,5 @@
-debug: true
-NODE_ENV: 'dev'
+debug: false
+NODE_ENV: 'production'
 
 favicon:
   path: 'static/asset/image/favicon.png'

@@ -61,7 +61,10 @@ const config = {
 		[EnvironmentNames.LOCAL]: {
 			extends: EnvironmentNames.PRODUCTION,
 			variables: {},
-			urls: {},
+			urls: {
+				[URLNames.INIT]: '/static/public-root/app.json',
+				[URLNames.PAGE_PREFIX]: '/static/public-root/page/',
+			},
 			properties: {}
 		}
 	},
@@ -70,8 +73,8 @@ const config = {
 		[VariableNames.BASE]: document.querySelector('meta[name=document-base]').getAttribute('content'),
 	},
 	urls: {
-		[URLNames.INIT]: '/static/public-root/app.json',
-		[URLNames.PAGE_PREFIX]: '/static/public-root/page/',
+		[URLNames.INIT]: '/static/app.json',
+		[URLNames.PAGE_PREFIX]: '/static/page/',
 	},
 	properties: {}
 };

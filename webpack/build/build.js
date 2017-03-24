@@ -11,6 +11,7 @@ const timestamp = Math.floor(new Date().getTime() / 1000);
 const buildTarget = path.join(__dirname, '../../', paths.buildPath);
 const publicPath = `version/${timestamp}/`;
 const versionFolder = `${buildTarget}/${publicPath}`;
+const staticFolder = `${buildTarget}/static/`;
 const processEnv = _.merge(definitions, {publicPath});
 
 webpackConfig.output = {
@@ -19,6 +20,8 @@ webpackConfig.output = {
 	filename: `${publicPath}js/[name].js`,
 	chunkFilename: `${publicPath}js/[id].js`
 };
+
+shell.rm('-rf', buildTarget + '/*');
 
 webpackConfig.module.loaders.push(
 	{
@@ -68,6 +71,10 @@ webpackConfig.plugins.unshift(
 
 shell.mkdir('-p', versionFolder);
 shell.cp('-R', paths.staticPath, versionFolder);
+
+shell.mkdir('-p', staticFolder);
+shell.cp('-R', paths.staticPublicPath + '*', staticFolder);
+shell.cp('-R', versionFolder + '/static/public-root');
 
 webpack(webpackConfig, function (err, stats) {
 	if (err) {
