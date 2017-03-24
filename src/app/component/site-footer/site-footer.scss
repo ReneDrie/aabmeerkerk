@@ -1,0 +1,27 @@
+:local {
+	.wrapper {
+		border-top: 1px solid $colorBorder;
+		background: lighten($colorBorder, 17);
+		padding: 2rem;
+	}
+
+	.address {
+		text-align: right;
+		font-size: 1rem;
+		font-style: normal;
+		color: $colorCopyLight;
+
+		strong {
+			color: $colorCopyMedium;
+		}
+
+		span {
+			color: lighten($colorCopyLight, 10);
+			padding: 0 0.4em;
+		}
+	}
+
+	.title {
+		color: $colorCopyMedium;
+	}
+}

@@ -1,0 +1,23 @@
+// Fonts
+$fontUbuntu: 'PT Sans', arial, sans-serif;
+
+// Z-Index
+$zLayout: default, header;
+
+// Sizes
+
+// Colors
+$colorMain: #ef1e1e;
+$colorMainShade: darken($colorMain, 10);
+$colorBackground: #efefef;
+$colorBorder: darken($colorBackground, 16);
+
+$colorCopyDark: #333;
+$colorCopyMedium: #666;
+$colorCopyLight: #999;
+
+// MediaQueries
+$mediaQueries: (
+	'medium': '(min-width: 640px)',
+	'large': '(min-width: 1024px)'
+);

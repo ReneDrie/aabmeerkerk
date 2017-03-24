@@ -1,0 +1,26 @@
+{
+	"pages": [
+		{
+			"id": "home",
+			"title": "Home",
+			"slug": "home"
+		},
+		{
+			"id": "what-we-do",
+			"title": "Wat doen we",
+			"slug": "wat-doen-we"
+		},
+		{
+			"id": "contact",
+			"title": "Contact",
+			"slug": "contact"
+		},
+
+		{
+			"id": "404",
+			"title": "404",
+			"slug": "404",
+			"hidden": true
+		}
+	]
+}

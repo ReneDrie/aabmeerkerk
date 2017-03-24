@@ -1,0 +1,11 @@
+*/.idea
+.idea
+.DS_Store
+npm-debug.log
+npm-debug.log.*
+node_modules
+dist
+
+*.lock.json
+*.nuget.props
+*.nuget.targets

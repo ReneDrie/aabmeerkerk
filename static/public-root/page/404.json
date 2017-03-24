@@ -1,0 +1,12 @@
+{
+	"title": "Pagina niet gevonden",
+	"components": [
+		{
+			"name": "paragraph",
+			"data": {
+				"h1": "Er is een fout",
+				"copy": "<p>De pagina kon niet worden gevonden</p>"
+			}
+		}
+	]
+}

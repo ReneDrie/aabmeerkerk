@@ -1,0 +1,64 @@
+:local {
+	.wrapper {
+		position: relative;
+		padding: 2rem;
+		border-bottom: 1px solid $colorBorder;
+	}
+
+	.logoWrapper {
+		width: 25%;
+		max-width: 8rem;
+	}
+
+	.logo {
+		@include aspect-ratio(1, 1);
+		width: 100%;
+		margin-bottom: 1.2rem;
+
+		svg {
+			@include size(100%);
+			position: absolute;
+			top: 0; left: 0;
+		}
+	}
+
+	.title {
+		font-size: 1.4em;
+		color: $colorCopyDark;
+	}
+
+	.description {
+		font-size: 0.9em;
+		color: $colorCopyLight;
+	}
+
+	@include respond-to('medium') {
+
+		.titleWrapper {
+			font-size: 1.2em;
+		}
+
+	}
+
+	@include respond-to('large') {
+
+		.wrapper {
+			display: flex;
+			align-items: center;
+			padding-bottom: 2rem;
+		}
+
+		.logoWrapper {
+			flex-grow: 1;
+		}
+
+		.logo {
+			margin-bottom: 0;
+		}
+
+		.titleWrapper {
+			padding-left: 3.2rem;
+		}
+
+	}
+}

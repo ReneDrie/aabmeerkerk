@@ -1,0 +1,61 @@
+const path = require('path');
+const _ = require('lodash');
+const webpack = require('webpack');
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const {paths, settings} = require('../../config');
+
+const plugins = [
+	/**
+	 *
+	 */
+	new ProgressBarPlugin(),
+	/**
+	 *
+	 */
+	new webpack.optimize.UglifyJsPlugin({
+		compress: {
+			warnings: false
+		}
+	}),
+	/**
+	 *
+	 */
+	new webpack.optimize.OccurenceOrderPlugin(),
+	/**
+	 *
+	 */
+	new webpack.optimize.CommonsChunkPlugin({
+		name: 'vendor',
+		minChunks: function (module, count) {
+			return (
+				module.resource &&
+				/\.js$/.test(module.resource) &&
+				module.resource.indexOf(
+					path.join(__dirname, '../../node_modules')
+				) === 0
+			)
+		}
+	}),
+	/**
+	 *
+	 */
+	new webpack.optimize.CommonsChunkPlugin({
+		name: 'manifest',
+		chunks: ['vendor']
+	}),
+	/**
+	 *
+	 */
+	settings.productionGzip ? new CompressionWebpackPlugin({
+			asset: '[path].gz[query]',
+			algorithm: 'gzip',
+			test: new RegExp(
+				'\\.(' +
+				settings.productionGzipExtensions.join('|') +
+				')$'
+			),
+			threshold: 10240,
+			minRatio: 0.8
+		}) : null
+];
+module.exports = _.compact(plugins);

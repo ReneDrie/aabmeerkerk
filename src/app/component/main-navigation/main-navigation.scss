@@ -1,0 +1,97 @@
+:local {
+
+	.wrapper {
+		position: relative;
+		margin: 0;
+		padding-left: 5.5rem;
+		min-height: 5.6rem;
+	}
+
+	.currentPage {
+		position: absolute;
+		top: 0;
+		left: 5.6rem;
+		right: 0;
+		font-size: 1.4em;
+		padding: 1.7rem 2rem;
+		border-bottom: 1px solid $colorBorder;
+		color: $colorCopyLight;
+	}
+
+	.button {
+		@include size(5.6rem);
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: 0;
+		border-right: 1px solid $colorBorder;
+		border-bottom: 1px solid $colorBorder;
+		background: none;
+		font: 0/0 a;
+		outline: none;
+
+		&:before {
+			@include pseudo();
+			@include size(1.6rem, 1.2rem);
+			@include offset(50%);
+			background: repeating-linear-gradient(
+					to bottom,
+					$colorCopyDark 0%,
+					$colorCopyDark 25%,
+					rgba(#000, 0) 25%,
+					rgba(#000, 0) 100%);
+			background-size: 100% 40%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	.list {
+		position: relative;
+		list-style: none;
+		background: #fff;
+	}
+
+	.item {
+		font-size: 1.4em;
+		margin: 0;
+		border-left: 1px solid $colorBorder;
+		border-bottom: 1px solid $colorBorder;
+
+		a {
+			display: block;
+			color: $colorMainShade;
+			text-decoration: none;
+			padding: 1.7rem 2rem;
+		}
+	}
+
+	.active {
+		color: $colorCopyLight !important;
+	}
+
+	@include respond-to('medium') {
+
+		.wrapper {
+			flex: 0 0 32%;
+			padding-left: 0;
+			max-width: 32rem;
+			border-right: 1px solid $colorBorder;
+		}
+
+		.button,
+		.currentPage {
+			display: none;
+		}
+
+		.list { display: block !important; }
+
+		.item {
+			border-left: 0;
+
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+
+	}
+}

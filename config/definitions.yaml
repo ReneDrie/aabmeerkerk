@@ -1,0 +1,6 @@
+debug: true
+
+favicon:
+  path: 'static/asset/image/favicon.png'
+  out: 'static/favicons/icon-[hash]-'
+  background: '#fff'

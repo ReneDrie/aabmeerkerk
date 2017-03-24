@@ -1,0 +1,48 @@
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+	background: $colorBackground;
+}
+
+body {
+	font-family: $fontUbuntu;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: $colorCopyMedium;
+	letter-spacing: 0.01em;
+	padding: 1.6rem;
+
+	@include respond-to('medium') {
+		padding: 4rem;
+	}
+
+	@include respond-to('large') {
+		font-size: 1.14286rem;
+	}
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+}

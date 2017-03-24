@@ -1,0 +1,18 @@
+{
+	"title": "Home",
+	"components": [
+		{
+			"name": "paragraph",
+			"data": {
+				"h1": "Wat is AAB Meerkerk",
+				"copy": "<p>AAB Meerkerk is een afterprint advies en service bureau gevestigd in Meerkerk.</p>"
+			}
+		},
+		{
+			"name": "paragraph",
+			"data": {
+				"copy": "<p>AAB Meerkerk heeft door het feit dat Arjen Drieenhuizen directeur is, ook de jaren lange ervaring en technische kennis van afterprint apparatuur in huis.</p>"
+			}
+		}
+	]
+}
