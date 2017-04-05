@@ -1,4 +1,5 @@
 // http://eslint.org/docs/user-guide/configuring
+
 module.exports = {
 	root: true,
 	parser: 'babel-eslint',
@@ -9,44 +10,32 @@ module.exports = {
 		browser: true,
 	},
 	extends: 'airbnb-base',
-	// required to lint *.vue files
 	plugins: [
-		'html'
+		'html',
+		'import'
 	],
-	// check if imports actually resolve
-	'settings': {
+	settings: {
 		'import/resolver': {
 			'webpack': {
-				'config': 'webpack/webpack.config.js'
+				'config': 'build/webpack.base.conf.js'
 			}
 		}
 	},
-	// add your custom rules here
-	'rules': {
+	rules: {
 		// don't require .vue extension when importing
-		// don't require .vue extension when importing
-		'import/extensions': ['off', 'always', {
+		'import/extensions': ['error', 'always', {
 			'js': 'never',
-			'vue': 'never'
+			'vue': 'never',
+			'ts': 'never'
 		}],
-		'import/no-extraneous-dependencies': ['error', {
-			'devDependencies': false
-		}],
+		// allow debugger during development
 		'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-		'import/prefer-default-export': 0,
-		'no-console': 0,
-		'no-extraneous-dependencies': 0,
-		'indent': [
-			2, "tab", {"SwitchCase": 1}
-		],
-		'no-void': 0,
+		'no-console': process.env.NODE_ENV === 'production' ? 1 : 0,
 		'no-tabs': 0,
-		'comma-dangle': 0,
-		'no-unused-vars': 1,
-		'no-use-before-define': 1,
-		'semi': 0,
-		'no-extra-semi': 0,
-		'max-len': [2, { "code": 120, "ignoreUrls": true }],
-		'no-trailing-spaces': 0
+		'indent': ['error', 'tab', {
+			'SwitchCase': 1
+		}],
+		'max-len': ['error', 120],
+		'no-param-reassign': 0,
 	}
 };

@@ -1,4 +1,0 @@
-# Example for a Laravel setup, all paths are relative to the root of this project
-# index: '../backend/resources/views/layouts/build.blade.php'
-# template: '../backend/resources/views/layouts/vue.blade.php'
-# buildPath: '../htdocs'

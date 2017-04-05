@@ -1,7 +1,0 @@
-debug: true
-NODE_ENV: 'dev'
-
-favicon:
-  path: 'static/asset/image/favicon.png'
-  out: 'static/favicons/icon-[hash]-'
-  background: '#fff'

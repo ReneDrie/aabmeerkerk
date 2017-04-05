@@ -1,110 +1,118 @@
-# Blue
-> Blocklevel loves user experience
+# vue-skeleton
+A vue skeleton
 
-Blue is an opinionated full fledged Vue.js framework. Blue enables you to create high end applications in a process where clients are a big part of your workflow.
+## Features
 
-## Quickstart
+* vuex
+* vue-router
+* webpack 2 
+* SCSS 
+* CSS Modules
+* versioning 
+* Typescript support
+* vuex-connect
+* seng-generator
+* seng-config
+* seng-scss
+* airbnb coding standard integrated using eslint
+* preview server with gzip
+* modernizr
+* optional eslint-loader
+* svg support
+* https support
+* i18n
 
-### Installation
-Using npm
-``` bash
-$ npm install
-```
-Using Yarn
-``` bash
-$ yarn
-```
+## Coding
 
-### ESlint Webstorm Configuration
-1. Go to File > Settings
-2. Search for ESLint
-3. Point eslint module to your the project *node_module/eslint* directory
+* Every component folder is in PascalCase
+* Every component contains a index.js to integrate vuex-connect and for easy import ```import HomePage from 'page/HomePage'```
+* Every page name ends with Page
+* Always use the PascalCase component name in your templates ```<ScrollBar/>```
 
-### Development
-This will start a webpack dev server with hot-reload
-``` bash
-$ npm run dev
+## Commands
 
-```
-
-### Testing
-This will start the karma test runner, we only support unit testing in this setup which are located in ``test/src/``
-``` bash
-$ npm run test
-```
-
-### Build
-This will create a new build, it will create a timestamped folder located in ``dist/version/``.
-
-Run the build command
-``` bash
-# to run a production build (default)
-$ npm run build
-
-# to run a environment specific build
-$ npm run build --env=staging
-```
+* ```npm run dev```: Starts the dev server
+* ```npm run build```: Create a build
+* ```npm run preview```: Preview the build in the browser
+* ```npm run lint```: Run eslint
+* ```npm run svg```: Process and optimize svg for use with the Icon component
 
 
-## Project structure
+## Seng generator templates
 
-```
-blue
-└───config
-│   └───dev
-│   └───production
-└───src
-│   └───app
-│   │   └───component
-│   │   └───container
-│   │   └───mixin
-│   │   └───page
-│   │   └───proxy
-│   │   └───store
-│   │   └───vendor
-│   └───asset
-│   │   └───font
-│   │   └───image
-│   │   └───style
-└───static
-│   └───lang
-└───test
-│   └───src
-└───webpack
-│   └───build
-│   └───dev
-│   └───test
-```
+Vue-skeleton has [seng-generator](https://github.com/mediamonks/seng-generator) templates integrated for easy creation of components, pages and store modules.
 
-### ``config``
-The environment configuration files can be found in ``config/`` where the subdirectories represent environment specifics.
-The build is created with environment specific configuration, it will use the ``--env`` argument when provided, otherwise it will use the ``NODE_ENV`` variable and will default to production.
-The path to the index file of the application can be altered by providing an ``index`` and ``template`` property to ``paths.yaml``. ``index`` is the file which will be written by Webpack based on the file located in the ``template`` path.
+Before you can use seng-generator you have to install it.
 
-Example configuration (TL;DR)
-```
-# Example for a Laravel setup, all paths are relative to the root of this project
-index: '../backend/resources/views/layouts/build.blade.php'
-template: '../backend/resources/views/layouts/vue.blade.php'
-buildPath: '../htdocs'
-```
+Run ```npm install seng-generator -g```
+
+After the installation is complete you can generate code based on the following templates:
+* component (```sg component <name>```) : Creates a component 
+* connected-component (```sg connected-component <name>```): Creates a component with vuex-connect integrated 
+* page (```sg page <name>```): Creates a page
+* connected-page (```sg connected-page <name>```): Creates a page with vuex-connect integrated
+* store (```sg store <name>```): Creates a store module
+
+It's also possible to modify or add templates. Check the [documentation](https://github.com/mediamonks/seng-generator) of seng-generator for more info.
+
+## SVG
+
+It's super easy to use svgs in vue-skeleton. 
+
+* Add your svgs to the svg folder (```asset/svg```)
+* Run ```npm run svg``` to optimize your svgs and copy them to the ```src/asset/svg``` folder
+* Use them in the Icon component ```<Icon name="check" class="icon-check" />```
+
+The Icon component is globally registered in Vue so you can use it without importing and registering in your components.
+
+## SCSS
+
+Vue-skeleton uses SCSS for styling. It also uses CSS modules to local scope the styling of your components. 
+Check https://vue-loader.vuejs.org/en/features/css-modules.html for more information.
+
+There are two main SCSS files:
+
+* ```screen.scss``` is the SCSS file for all your global styling. By default it only imports the normalize.css module.
+* ```utils.scss``` is the SCSS file for all the mixins and variables. By default it imports [seng-scss](https://github.com/mediamonks/seng-scss).
+This file is also automatically imported in every component SCSS file so you never have to import mixins and variables in your component. 
+**Note: Make sure that you never add styling that outputs css because that will be included in every component css file.**
+
+## Autoprefixer
+
+Autoprefixer is also enabled by default. The browserslist can be found and tweaked in the ```package.json```.
+
+## Preview Build
+
+It's also possible to preview a build. You can preview your build by running ```npm run preview``` after a build. 
+Because of config differences between development and production it's possible that everything works in developement but not in a production build. 
+So it's good to test it on a regular basis to avoid suprises when you go live.
+
+## Modernizr
+
+Modernizr is buildin in vue-skeleton. You can add you feature-detects and options in ```.modernizrrc```. See https://github.com/Modernizr/Modernizr/blob/master/lib/config-all.json for all options and feature-detects.
+
+## Polyfills
+
+You can import all required polyfills in ```src/polyfill/index.js```.
+Vue-skeleton doesn't include babel-polyfill because it includes a lot of polyfills that are not required anymore.
+
+By default it includes polyfills for the following features:
+
+* Fetch
+* Promises
+* Array.includes
+* Classlist
+
+## Assets
+
+## Locale support
+
+## Config
+
+## Startup
 
 
-### ``src``
-This is where all the application specific files will be located.
-- ``src/app/component/`` should contain components which are used for presentational purposes
-- ``src/app/container`` should contain components which are used for functional purposes
-- ``src/app/mixin`` [should contain mixins](https://www.google.nl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjFrZSVjcTQAhVB6xoKHXpAArIQjRwIBw&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F339388521896053375%2F&psig=AFQjCNHbLqq8l_sFqq6qhjAPjCsOsMQ03w&ust=1480170014958970)
-- ``src/app/page`` should contain components which represent a certain page
-- ``src/app/proxy`` should contain functions which retrieve data in any way (AJAX, getCurrentPosition, localStorage etc.)
-- ``src/app/proxy`` contains the application's store and modules, see [Vuex](https://github.com/vuejs/vuex)
-- ``src/app/vendor`` contain files which can't be loaded by Webpack for some reason
 
-### ``static``
-Should contain all static files for the project
 
-### ``test``
-Should contain unit tests
 
-### ``webpack``
-Contains the Webpack setup
+

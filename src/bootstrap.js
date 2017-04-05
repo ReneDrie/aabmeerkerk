@@ -1,34 +1,50 @@
-/**
- * Initialize base application styles
- */
-import 'src/asset/style/base.scss';
+import 'asset/style/screen.scss';
+import 'modernizr';
+import 'polyfill';
 
-import { sync } from 'vuex-router-sync';
-import startup from 'src/app/startup';
-import App from 'src/app';
-import router from 'src/app/router';
-import store from 'src/app/store';
 import Vue from 'vue';
+import { sync } from 'vuex-router-sync';
+import filter from 'filter';
+import directive from 'directive';
+import component from 'component';
+import router from 'router';
+import store from 'store';
+import VueI18nManager from 'vue-i18n-manager';
+import localeConfig from 'config/localeConfig';
+import startUp from 'control/startUp';
 
-// Reusable component global imports
-import 'component/paragraph/paragraph';
-import 'component/contact-form/contact-form';
+import App from 'App';
 
-/**
- * The debug mode is available globally in the Vue.config.debug property
- */
-Vue.config.debug = process.env.debug;
+// register filters globally
+Object.keys(filter).forEach(key => Vue.filter(key, filter[key]));
 
-let app = null;
+// register directives globally
+Object.keys(directive).forEach(key => Vue.directive(key, directive[key]));
 
-startup()
-	.then(() => {
-		app = new App({
-			store,
-			router
-		});
+// register components globally
+Object.keys(component).forEach(key => Vue.component(key, component[key]));
 
-		// Sync store and router
-		sync(store, router);
-	})
-	.then(() => app.$mount('[data-app-container]'));
+if (localeConfig.localeEnabled) {
+	Vue.use(VueI18nManager, {
+		store,
+		router,
+		config: localeConfig.config,
+		proxy: localeConfig.proxy,
+	});
+
+	Vue.initI18nManager();
+}
+
+// sync router data to store
+sync(store, router);
+
+const app = new Vue({
+	...App,
+	router,
+	store,
+});
+
+startUp().then(() => {
+	app.$mount('#app');
+});
+

@@ -1,0 +1,22 @@
+{
+	"title": "Wat doen we",
+	"components": [
+		{
+			"name": "paragraph",
+			"data": {
+				"h1": "Wat doen we"
+			}
+		},
+		{
+			"name": "paragraphList",
+			"data": [
+				"AAB Meerkerk geeft advies bij aanschaf van afterprintapparatuur.",
+				"AAB Meerkerk onderhoudt en repareert afterprint machines",
+				"AAB Meerkerk past machines aan voor speciaal werk of arbo eisen.",
+				"AAB Meerkerk werkt met andere leveranciers samen.",
+				"AAB Meerkerk kan ook voor supplies adviseren.",
+				"AAB Meerkerk voor gerevideerde hechtkoppen voor CP Bourg, Duplo, Horizon, Camco, etc van Interlake, Bostitch en Hohner."
+			]
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"title": "Wat doen we",
+	"components": [
+		{
+			"name": "paragraph",
+			"data": {
+				"h1": "Contact"
+			}
+		},
+		{
+			"name": "contactForm",
+			"data": {
+				"title": "Stuur een e-mail"
+			}
+		}
+	]
+}
