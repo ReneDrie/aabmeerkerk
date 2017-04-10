@@ -3,6 +3,8 @@ import 'modernizr';
 import 'polyfill';
 
 import Vue from 'vue';
+import axios from 'axios';
+import VueAxios from 'vue-axios';
 import { sync } from 'vuex-router-sync';
 import filter from 'filter';
 import directive from 'directive';
@@ -35,6 +37,8 @@ if (localeConfig.localeEnabled) {
 	Vue.initI18nManager();
 }
 
+Vue.use(VueAxios, axios);
+
 // sync router data to store
 sync(store, router);
 
@@ -47,4 +51,3 @@ const app = new Vue({
 startUp().then(() => {
 	app.$mount('#app');
 });
-
