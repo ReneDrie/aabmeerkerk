@@ -3,6 +3,7 @@ import Pages from 'data/enum/Pages';
 
 export default [
 	{
+		name: 'home',
 		path: Pages.HOME,
 		component: HomePage,
 	},

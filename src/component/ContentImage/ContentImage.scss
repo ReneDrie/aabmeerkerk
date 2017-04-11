@@ -1,0 +1,22 @@
+:local {
+
+	.wrapper {
+		margin: 0 0 1.4em;
+
+		img {
+			display: inline-block;
+			max-width: 30%;
+			vertical-align: bottom;
+			border: 1px solid $colorCopyLightest;
+			margin-bottom: 0.5em;
+			padding: 0.4rem;
+
+			&:not(:first-child) { margin-left: 0.5em; }
+		}
+	}
+
+	.caption {
+		color: $colorCopyLightest;
+	}
+
+}

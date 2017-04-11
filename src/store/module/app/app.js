@@ -21,7 +21,7 @@ export default {
 	actions: {
 		[GET_PAGE]({ commit, state }, pageId) {
 			const id = pageId;
-			if (typeof id === 'undefined') {
+			if (typeof id === 'undefined' || id.length === 0) {
 				return Promise.reject('home');
 			} else if (!state.pages.find(p => p.slug === id)) {
 				return Promise.reject('404');

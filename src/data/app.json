@@ -11,9 +11,46 @@
 			"slug": "wat-doen-we"
 		},
 		{
+			"id": "b-matic",
+			"title": "B.Matic",
+			"slug": "b-matic"
+		},
+		{
+			"id": "tellen",
+			"title": "Tellen",
+			"slug": "tellen"
+		},
+		{
+			"id": "strookinschiet-unit",
+			"title": "Strookinschiet unit",
+			"slug": "strookinschiet-unit"
+		},
+		{
+			"id": "rollem",
+			"title": "Rollem",
+			"slug": "rollem"
+		},
+		{
+			"id": "graphic-wizard",
+			"title": "Graphic wizard",
+			"slug": "graphic-wizard"
+		},
+		{
+			"id": "occasions",
+			"title": "Occasions",
+			"slug": "occasions"
+		},
+		{
 			"id": "contact",
 			"title": "Contact",
 			"slug": "contact"
+		},
+
+		{
+			"id": "tellen/test",
+			"title": "Tellen Test",
+			"slug": "tellen/test",
+			"hidden": true
 		},
 
 		{

@@ -1,6 +1,19 @@
 :global {
 	.h1 {
 		font-size: 1.6em;
+		color: $colorMain;
+		margin-bottom: 0.5em;
+	}
+
+	h2 {
+		font-size: 1.2em;
 		color: $colorCopyDark;
+		margin-bottom: 0.5em;
+	}
+
+	h3 {
+		font-size: 1em;
+		color: $colorCopyDark;
+		margin-bottom: 0.5em;
 	}
 }

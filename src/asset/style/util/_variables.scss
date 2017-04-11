@@ -12,9 +12,10 @@ $colorMainShade: darken($colorMain, 10);
 $colorBackground: #efefef;
 $colorBorder: darken($colorBackground, 16);
 
-$colorCopyDark: #333;
+$colorCopyDark: #222;
 $colorCopyMedium: #666;
 $colorCopyLight: #999;
+$colorCopyLightest: #bbb;
 
 // MediaQueries
 $mediaQueries: (

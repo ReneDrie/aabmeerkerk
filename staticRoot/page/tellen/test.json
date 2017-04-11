@@ -1,0 +1,12 @@
+{
+	"title": "Tellen",
+	"components": [
+		{
+			"name": "paragraph",
+			"data": {
+				"h1": "Test tellen",
+				"copy": "<p>Meh meh</p>"
+			}
+		}
+	]
+}

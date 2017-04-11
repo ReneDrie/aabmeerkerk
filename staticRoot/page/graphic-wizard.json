@@ -1,0 +1,12 @@
+{
+	"title": "Home",
+	"components": [
+		{
+			"name": "paragraph",
+			"data": {
+				"h1": "Graphic Wizard",
+				"copy": "<p>AAB Meerkerk levert numeroteurs van Graphic whizard. <br>Kijk op <a href=\"http://www.graphicwhizard.com\" target=\"_blank\">www.graphicwhizard.com</a> voor meer informatie.</p>"
+			}
+		}
+	]
+}

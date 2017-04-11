@@ -1,0 +1,70 @@
+{
+	"title": "Home",
+	"components": [
+		{
+			"name": "paragraph",
+			"data": {
+				"h1": "B.Matic strookinschiet unit compact",
+				"copy": "<p>Strook inschiet unit kunnen de kosten voor het tellen van vellen verlagen en de arbeid vereenvoudigen.<br>En klachten die voortvloeien bij geen of te weinig uit-levering voorkomen.<br>De BIMATC strook inschietunit voor het tellen en verdelen is eenvoudig te gebruiken. Geschikt voor gebruik op drukpersen van alle merken, ponsmachines , OHV, Heidelberg MO etc. </p>"
+			}
+		},
+		{
+			"name": "paragraph",
+			"data": {
+				"h3": "Voordelen"
+			}
+		},
+		{
+			"name": "paragraphList",
+			"data": [
+				"Metalen behuizing",
+				"zware telescopische staander 40-160 cm.",
+				"stevig papier via dubbele kraal voor betrouwbare inschietstroken",
+				"80 gr. papier tape in plaats van 150 gr.: stapel groeit niet eenzijdig",
+				"200 m. strip lengte per rol dankzij 80gr. papier",
+				"50 cm. kanaal lengte standaard (160 - 1.000 mm. lengte beschikbaar)",
+				"Open kanaal over de gehele lengte en individuele schuine strook geleiding mogelijk",
+				"tot 25.000 vel / uur tel snelheid",
+				"maximaal 9.999 vellen tussen de stroken",
+				"variabele wachttijd en inkorting vertraging",
+				"variabele strook lengte 70-200 mm.",
+				"microprocessorcontrole",
+				"gehard mes voor een lange levensduur",
+				"teller correctie voor test papier, testvellen en afval",
+				"levering met optische sensor of de interfacekabel",
+				"eenvoudige montage"
+			]
+		},
+		{
+			"name": "paragraph",
+			"data": {
+				"copy": "<p>De Strookinschiet unit COMPACT is een compacte strook inschietunit in robuuste ontwerp.</p>"
+			}
+		},
+		{
+			"name": "contentImage",
+			"data": {
+				"image": [
+					{ "url": "image/strookinschietunit-compact.jpg" },
+					{ "url": "image/papier-stapel.jpg" }
+				],
+				"caption": "Strookinschiet unit COMPACT met geïntegreerde besturing."
+			}
+		},
+		{
+			"name": "paragraph",
+			"data": {
+				"h1": "Strookinschiet unit compact",
+				"h3": "Optische sensor",
+				"copy": "<p>De nieuwe optische sensor detecteert papier aan de rand van het vel om telfouten (door trillingen) te voorkomen. Zelfs met gekleurd papier.<br>De instelling is zo te verstellen dat de telnauwkeurigheid toeneemt.<br>Als alternatief kan de telling via de interface-kabel rechtstreeks van de drukpers, ponsmachine, boekdrukpers, OHV, dwarssnijders etc. worden opgenomen. Of door bewegende onderdelen met behulp van micro schakelaars of naderingsschakelaars.</p>"
+			}
+		},
+		{
+			"name": "YoutubeEmbed",
+			"data": {
+				"embed": "39txdLjSFIk",
+				"caption": "Video van de TAB INSERTER strookinschiet unit"
+			}
+		}
+	]
+}

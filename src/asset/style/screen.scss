@@ -15,20 +15,10 @@
 		overflow: hidden;
 	}
 
-	.content {
-		min-height: 32rem;
-		padding: 2rem;
-		font-size: 1.4em;
-	}
-
 	@include respond-to('medium') {
 
 		.content-wrapper {
 			display: flex;
-		}
-
-		.content {
-			flex-grow: 1;
 		}
 
 	}

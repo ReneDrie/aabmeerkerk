@@ -1,3 +1,26 @@
 :local {
 
+	.content {
+		padding: 2rem;
+		font-size: 1.4em;
+
+		p {
+			margin-bottom: 1.4em;
+		}
+
+		a {
+			color: $colorMain;
+			text-decoration: underline;
+		}
+	}
+
+	@include respond-to('medium') {
+
+		.content {
+			min-height: 42vh;
+			flex-grow: 1;
+		}
+
+	}
+
 }

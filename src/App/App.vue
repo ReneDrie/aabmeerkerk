@@ -6,7 +6,7 @@
 		<SiteHeader></SiteHeader>
 		<section class="content-wrapper">
 			<MainNavigation></MainNavigation>
-			<router-view class="content"></router-view>
+			<router-view :class="$style.content"></router-view>
 		</section>
 		<SiteFooter></SiteFooter>
 	</div>

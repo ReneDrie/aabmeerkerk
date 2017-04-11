@@ -1,0 +1,26 @@
+:local {
+
+	.wrapper {
+		margin: 0 0 1.4em;
+	}
+
+	.video {
+		@include aspect-ratio(16, 9);
+		width: 100%;
+		max-width: 56rem;
+		margin-bottom: 0.5em;
+
+		iframe {
+			@include offset();
+			@include size(100%);
+			position: absolute;
+			border: 1px solid $colorCopyLightest;
+			padding: 0.4rem;
+		}
+	}
+
+	.caption {
+		color: $colorCopyLightest;
+	}
+
+}

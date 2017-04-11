@@ -24,4 +24,10 @@
 	.title {
 		color: $colorCopyMedium;
 	}
+
+	@include respond-to('medium') {
+		.address {
+			font-size: 1.4rem;
+		}
+	}
 }

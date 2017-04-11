@@ -7,7 +7,7 @@
 		<span :class="$style.currentPage">{{currentPage}}</span>
 		<ul :class="$style.list" v-show="open">
 			<li key="index" :class="$style.item" v-for="page in visiblePages">
-				<router-link :to="page.slug" :active-class="$style.active">{{page.title}}</router-link>
+				<router-link :to="{ name: 'home', params: { page: page.slug } }" :active-class="$style.active">{{page.title}}</router-link>
 			</li>
 		</ul>
 	</nav>

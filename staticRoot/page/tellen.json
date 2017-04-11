@@ -1,0 +1,50 @@
+{
+	"title": "Home",
+	"components": [
+		{
+			"name": "paragraph",
+			"data": {
+				"h1": "Tellen"
+			}
+		},
+		{
+			"name": "paragraphList",
+			"data": [
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine F320" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine PROTEC CM-LS" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine PROTEC CM" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine PROTEC CT2" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine PROTEC CT3" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine PROTEC DUO" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine PROTEC PACK MOVER A4" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine PROTEC PACK MOVER LP" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Pallet telmachine" } }
+			]
+		},
+		{
+			"name": "paragraph",
+			"data": {
+				"h2": "Voordelen van de B.Matic PROTEC tel machines."
+			}
+		},
+		{
+			"name": "paragraphList",
+			"data": [
+				"Geen buigen of vervorming van de hoeken zoals bij conventionele tel machines.",
+				"Geen markering of krassen in de hoeken, zelfs met verse drukwerk.",
+				"Geen telfouten of uitglijden op een glad papier oppervlak.",
+				"Telt papier, karton, folie of plastic 40-800 uM.",
+				"Om te stellen tussen verschillende papier gewichten door het programma in een paar seconden.",
+				"Dubbele zuigers voor het tellen in plaats van frictie-tel vingers of pen en mes.",
+				"100% telnauwkeurigheid door het fysiek tellen van elk vel in plaats van optische camera's of statistische telmethoden.",
+				"Telt van boven in plaats van onder: getelde vellenkunnen gemakkelijk verwijderd worden van de stapel papier."
+			]
+		},
+		{
+			"name": "paragraph",
+			"data": {
+				"copy": "<p>Tellen met pin-en-blad geeft wrijving en vervormt de hoek van de stapel papier. Hoek vervorming conventioneel tellen</p>"
+			}
+		}
+	]
+}

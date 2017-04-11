@@ -1,0 +1,12 @@
+{
+	"title": "Home",
+	"components": [
+		{
+			"name": "paragraph",
+			"data": {
+				"h1": "B.Matic",
+				"copy": "<p>AAB Meerkerk levert vellentellers en strook inschiet apparatuur van B Matic.<br>Kijk op <a href=\"http://www.bmatic.it\" target=\"_blank\">www.bmatic.it</a> voor meer informatie.</p>"
+			}
+		}
+	]
+}

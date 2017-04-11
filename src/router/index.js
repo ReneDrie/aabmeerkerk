@@ -23,7 +23,10 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
-	store.dispatch(AppMutationTypes.GET_PAGE, to.params.page)
+	const pageId = [to.params.page];
+	if (to.params.sub) pageId.push(to.params.sub);
+
+	store.dispatch(AppMutationTypes.GET_PAGE, pageId.join('/'))
 		.then(() => next())
 		.catch(page => next(page));
 });
