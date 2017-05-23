@@ -1,11 +1,10 @@
 {
-	"title": "Tellen",
+	"title": "Telmachine BMatic F320",
 	"components": [
 		{
 			"name": "paragraph",
 			"data": {
-				"h1": "Test tellen",
-				"copy": "<p>Meh meh</p>"
+				"h1": "Telmachine BMATIC F320"
 			}
 		}
 	]

@@ -1,3 +1,3 @@
 export default {
-	HOME: '/:page?/:sub?',
+	HOME: '/:page?/:sub?/:sub2?',
 };

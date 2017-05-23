@@ -47,9 +47,57 @@
 		},
 
 		{
-			"id": "tellen/test",
-			"title": "Tellen Test",
-			"slug": "tellen/test",
+			"id": "tellen/telmachine-protec-ct2",
+			"title": "Tellen > Telmachine BMATIC PROTEC CT2",
+			"slug": "tellen/telmachine-protec-ct2",
+			"hidden": true
+		},
+		{
+			"id": "tellen/telmachine-protec-ct3",
+			"title": "Tellen > Telmachine BMATIC PROTEC CT3",
+			"slug": "tellen/telmachine-protec-ct3",
+			"hidden": true
+		},
+		{
+			"id": "tellen/telmachine-protec-duo",
+			"title": "Tellen > Telmachine BMATIC PROTEC DUO",
+			"slug": "tellen/telmachine-protec-duo",
+			"hidden": true
+		},
+		{
+			"id": "tellen/telmachine-f320",
+			"title": "Tellen > Telmachine F320",
+			"slug": "tellen/telmachine-f320",
+			"hidden": true
+		},
+		{
+			"id": "tellen/telmachine-protec-cm-ls",
+			"title": "Tellen > Telmachine BMATIC PROTEC CM-LS",
+			"slug": "tellen/telmachine-protec-cm-ls",
+			"hidden": true
+		},
+		{
+			"id": "tellen/telmachine-protec-cm",
+			"title": "Tellen > Telmachine BMATIC PROTEC CM",
+			"slug": "tellen/telmachine-protec-cm",
+			"hidden": true
+		},
+		{
+			"id": "tellen/telmachine-protec-pack-mover-a4",
+			"title": "Tellen > Telmachine BMATIC PROTEC PACK MOVER A4",
+			"slug": "tellen/telmachine-protec-pack-mover-a4",
+			"hidden": true
+		},
+		{
+			"id": "tellen/telmachine-protec-pack-mover-lp",
+			"title": "Tellen > Telmachine BMATIC PROTEC PACK MOVER LP",
+			"slug": "tellen/telmachine-protec-pack-mover-lp",
+			"hidden": true
+		},
+		{
+			"id": "tellen/pallet-telmachine",
+			"title": "Tellen > Pallet Telmachine",
+			"slug": "tellen/pallet-telmachine",
 			"hidden": true
 		},
 

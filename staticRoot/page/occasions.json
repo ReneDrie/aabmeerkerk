@@ -13,6 +13,177 @@
 			"data": {
 				"copy": "<p>AAB Meerkerk heeft 39 jaar ervaring met afwerkmachines en hierdoor ook de technische kennis van afterprint apparatuur in huis. Hiernaast kunnen wij ook zorg dragen voor de levering van stans, fusing-folie, lijm apparatuur etc.</p>"
 			}
+		},
+		{
+			"name": "occasions",
+			"data": {
+				"items": [
+
+					{
+						"id": "copybinder-1",
+						"category": "Bindsystemen",
+						"name": "Copybinder1",
+						"specs": [
+							{
+								"label": "Serienummer",
+								"value": "094550 315"
+							}
+						],
+						"price": "550,00"
+					},
+					{
+						"id": "kaffy-ready",
+						"category": "Bindsystemen",
+						"name": "Kaffy Ready handmatig kaften produceren",
+						"price": "400,00"
+					},
+					{
+						"id": "planax-koudlijm-machine",
+						"category": "Bindsystemen",
+						"name": "Planax koudlijmmachine",
+						"description": "Bindmachine met een frees inrichting en verwarmings plaat op onderstel",
+						"price": "2750,00"
+					},
+					{
+						"id": "renz-e-kombi-showroom",
+						"category": "Bindsystemen",
+						"name": "Renz E kombi",
+						"description": "Tafel model elektrisch pons/bindmachine voor plastic bindruggen 21 rings/ A4.<br><br>Showroom model",
+						"price": "300,00"
+					},
+
+					{
+						"id": "iram-12",
+						"category": "Boor-ril-perforeer",
+						"name": "IRAM 12",
+						"description": "Papier boormachine voorzien van 4 boorkoppen",
+						"price": "2000,00"
+					},
+					{
+						"id": "iram-12-2kops",
+						"category": "Boor-ril-perforeer",
+						"name": "IRAM 12 2kops papierboormachine",
+						"description": "Hydraulisch bediende boortefel en voorzien van 2 boorkoppen",
+						"price": "2250,00"
+					},
+					{
+						"id": "iram-16",
+						"category": "Boor-ril-perforeer",
+						"name": "IRAM 16",
+						"description": "Papier boormachine voorzien van 4 boorkoppen",
+						"price": "2250,00"
+					},
+					{
+						"id": "foelmer-1-kops",
+						"category": "Boor-ril-perforeer",
+						"name": "Foelmer 1 kops",
+						"specs": [
+							{
+								"label": "Serienummer",
+								"value": "122"
+							}
+						],
+						"price": "275,00"
+					},
+					{
+						"id": "rollem-tr-42",
+						"category": "Boor-ril-perforeer",
+						"name": "Rollem TR 42, dubbelkopsril-perforeermachine",
+						"specs": [
+							{
+								"label": "Bouwjaar",
+								"value": "1998"
+							}
+						],
+						"price": "6.000,00"
+					},
+					{
+						"id": "challenge-papierboor-slijpmachine",
+						"category": "Boor-ril-perforeer",
+						"name": "Challenge papierboor slijpmachine",
+						"description": "Elektrisch Papierboor slijpmachine",
+						"price": "450,00"
+					},
+					{
+						"id": "omm-mariner-2",
+						"category": "Boor-ril-perforeer",
+						"name": "OMM Mariner 2",
+						"description": "Tafelmodel elektrische rilmachine",
+						"price": "1250,00"
+					},
+					{
+						"id": "horizon-ril-perforeermachine",
+						"category": "Boor-ril-perforeer",
+						"name": "Horizon ril / perforeermachine",
+						"description": "Op onderstel en doorvoerbreedte van 50 cm.<br><br>Heeft 5 werktuig units met perforeermessen",
+						"price": "750,00"
+					},
+
+					{
+						"id": "compac-t-100",
+						"category": "Diversen",
+						"name": "Compac T 100",
+						"specs": [
+							{
+								"label": "Serienummer",
+								"value": "911101"
+							}
+						],
+						"price": "950,00"
+					},
+					{
+						"id": "feeder-abdicksorter",
+						"category": "Diversen",
+						"name": "Feeder ABDick sorter",
+						"price": "225,00"
+					},
+					{
+						"id": "herzig-foliedruk",
+						"category": "Diversen",
+						"name": "Herzig foliedruk aut Invoer",
+						"description": "Tafelmodel en doorvoerbreedte tot 32 cm.",
+						"specs": [
+							{
+								"label": "Serienummer",
+								"value": "150"
+							},
+							{
+								"label": "Bouwjaar",
+								"value": "1996"
+							}
+						],
+						"price": "1750,00"
+					},
+					{
+						"id": "pfe-automailer-1",
+						"category": "Diversen",
+						"name": "PFE Automailer 1 Couverteer machine max. C5",
+						"price": "600,00"
+					},
+					{
+						"id": "kensol-foliedrukmachine",
+						"category": "Diversen",
+						"name": "Kensol foliedrukmachine",
+						"description": "Folie drukmachine op onderstel.<br><br>Chliche plaat afmeting 125 x 200 mm<br>Werkt op perslucht",
+						"price": "1750,00"
+					},
+					{
+						"id": "piab",
+						"category": "Diversen",
+						"name": "PIAB",
+						"description": "Druk/ vacuum pomp op perslucht, te vergelijken met een DVT 100M3",
+						"price": "450,00"
+					},
+					{
+						"id": "tom",
+						"category": "Diversen",
+						"name": "TOM",
+						"description": "touw knoop machine op verrijdbaar onderstel",
+						"price": "700,00"
+					}
+
+				]
+			}
 		}
 	]
 }

@@ -10,4 +10,3 @@
 		<div v-if="data.copy" v-html="data.copy"></div>
 	</section>
 </template>
-

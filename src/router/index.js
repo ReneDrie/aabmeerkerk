@@ -8,6 +8,7 @@ import store from 'store';
 import { AppMutationTypes } from 'store/module/app';
 
 import routes from './routes';
+import getPageId from '../util/getPageId';
 
 Vue.use(VueRouter);
 
@@ -23,10 +24,9 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
-	const pageId = [to.params.page];
-	if (to.params.sub) pageId.push(to.params.sub);
+	const pageId = getPageId(to);
 
-	store.dispatch(AppMutationTypes.GET_PAGE, pageId.join('/'))
+	store.dispatch(AppMutationTypes.GET_PAGE, pageId)
 		.then(() => next())
 		.catch(page => next(page));
 });

@@ -10,15 +10,15 @@
 		{
 			"name": "paragraphList",
 			"data": [
-				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine F320" } },
-				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine PROTEC CM-LS" } },
-				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine PROTEC CM" } },
-				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine PROTEC CT2" } },
-				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine PROTEC CT3" } },
-				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine PROTEC DUO" } },
-				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine PROTEC PACK MOVER A4" } },
-				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Telmachine PROTEC PACK MOVER LP" } },
-				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "test", "text": "Pallet telmachine" } }
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "telmachine-f320", "text": "Telmachine F320" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "telmachine-protec-cm-ls", "text": "Telmachine PROTEC CM-LS" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "telmachine-protec-cm", "text": "Telmachine PROTEC CM" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "telmachine-protec-ct2", "text": "Telmachine PROTEC CT2" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "telmachine-protec-ct3", "text": "Telmachine PROTEC CT3" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "telmachine-protec-duo", "text": "Telmachine PROTEC DUO" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "telmachine-protec-pack-mover-a4", "text": "Telmachine PROTEC PACK MOVER A4" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "telmachine-protec-pack-mover-lp", "text": "Telmachine PROTEC PACK MOVER LP" } },
+				{ "component": "SpaLink", "data": { "page": "tellen", "sub": "pallet-telmachine", "text": "Pallet telmachine" } }
 			]
 		},
 		{

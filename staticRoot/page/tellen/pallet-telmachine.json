@@ -1,0 +1,11 @@
+{
+	"title": "Pallet telmachine",
+	"components": [
+		{
+			"name": "paragraph",
+			"data": {
+				"h1": "Pallet telmachine"
+			}
+		}
+	]
+}

@@ -5,6 +5,7 @@ import ContactForm from './ContactForm';
 import SpaLink from './SpaLink';
 import ContentImage from './ContentImage';
 import YoutubeEmbed from './YoutubeEmbed';
+import Occasions from './Occasions';
 
 // add components you want to register globally
 export default {
@@ -15,4 +16,5 @@ export default {
 	SpaLink,
 	ContentImage,
 	YoutubeEmbed,
+	Occasions,
 };

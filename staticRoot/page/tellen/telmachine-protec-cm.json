@@ -1,0 +1,11 @@
+{
+	"title": "Telmachine BMATIC PROTEC CM",
+	"components": [
+		{
+			"name": "paragraph",
+			"data": {
+				"h1": "Telmachine BMATIC PROTEC CM"
+			}
+		}
+	]
+}

@@ -20,4 +20,5 @@ export const VariableNames = {
 export const PropertyNames = {
 	DEFAULT_LOCALE: 'default-locale',
 	AVAILABLE_LOCALES: 'available-locales',
+	IGNORE_SUB: 'ignore-sub',
 };

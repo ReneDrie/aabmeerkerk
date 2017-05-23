@@ -1,0 +1,54 @@
+{
+	"title": "Telmachine BMATIC PROTEC CT2",
+	"components": [
+		{
+			"name": "paragraph",
+			"data": {
+				"h1": "Telmachine BMATIC PROTEC CT2",
+				"copy": "<p>De BMATIC PROTEC CT2 is uitgerust met 2 contact loze zuigkoppen en een strook inschiet unit:<br>Dit heeft de volgende voordelen ten opzichte van andere tel machines:</p>"
+			}
+		},
+		{
+			"name": "paragraph-list",
+			"data": [
+				"geen vervorming van de hoek,",
+				"geen beschadiging vervorming bij het tellen",
+				"verwerkt zware vellen zonder problemen",
+				"zelfklevende etiketten en zelfklevende materialen zijn geen probleem",
+				"geschikt voor 70-500 uM. vel dikte of ongeveer 70 tot 500 gr / m2 (optie: 40-800uM)",
+				"zelfs met nat drukwerk geen markering of krassen",
+				"zonder gereedschap om te zetten van papieren gewichten in 30 seconden"
+			]
+		},
+		{
+			"name": "paragraph",
+			"data": {
+				"copy": "<p>De BMATIC PROTEC CT2 verwerkt vellen tot 500 gr / m² is hier afgebeeld met de 50x70 cm tafel vergroting.</p>"
+			}
+		},
+		{
+			"name": "paragraph",
+			"data": {
+				"h3": "Specificaties vellen teller BMATIC PROTEC CT2:"
+			}
+		},
+		{
+			"name": "paragraph-list",
+			"data": [
+				"het tellen van een complete batch",
+				"het tellen van een vooraf geselecteerde hoeveelheid",
+				"onderverdeling van een stapel door het inschieten van stroken",
+				"meer dan 200 mm. papierstapel hoogte",
+				"formaten van A6 tot A3",
+				"werkt met een 3,8 \" touchscreen",
+				"Gewicht 240 kg., 230V."
+			]
+		},
+		{
+			"name": "paragraph",
+			"data": {
+				"copy": "<p>Het tellen van PROTEC CT2 met 70 x 70 cm roestvrijstalen tafel, contact loze dubbele zuigkop en strook inschiet unit</p>"
+			}
+		}
+	]
+}
